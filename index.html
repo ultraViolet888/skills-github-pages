@@ -11,6 +11,23 @@
             padding: 40px 20px;
         }
 
+        .hero {
+            text-align: center; 
+            margin-bottom: 32px;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #8a0faf;
+            margin-bottom: 24px;
+        }
+
+        .hero-links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+
         .hero-metrics {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -21,7 +38,19 @@
 
 <body>
     <main class="page">
-        <h1>Timothy "Violet" John</h1>
+        <header class="hero">
+            <h1>Timothy "Violet" John</h1>
+
+            <p class="tagline">
+                Technical and people leader improving how teams deliver.
+            </p>
+
+            <nav class="hero-links">
+                <a href="mailto:timmyj1203@gmail.com">Email</a>
+                <a href="https://github.com/ultraviolet888">GitHub</a>
+                <a href="https://www.linkedin.com/in/timothy-john-1203/">LinkedIn</a>
+            </nav>
+        </header>
 
         <section class="hero-metrics">
             <div class="metric">
