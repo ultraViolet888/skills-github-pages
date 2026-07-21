@@ -52,8 +52,25 @@
             padding-top: 24px;
         }
 
-        .section-block {
-            margin-top: 32px;
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 24px;
+        }
+
+        .timeline-column {
+            border-left: 1px solid black;
+            padding-left: 16px;
+        }
+
+        .timeline-item {
+            margin-bottom: 20px;
+        }
+
+        .timeline-item strong,
+        .timeline-item span {
+            display: block;
         }
     </style>
 </head>
@@ -109,8 +126,92 @@
             <h2>Professional</h2>
 
             <p>
-                A timeline of education, engineering work, product ownership, and delivery leadership.
+                A broad timeline of education, career, and continuous growth.
             </p>
+
+            <div class="timeline-grid">
+                <div class="timeline-column">
+                    <h3>Education</h3>
+
+                    <div class="timeline-item">
+                        <strong>2012</strong>
+                        <span>Santa Monica College</span>
+                    </div>
+
+                    <div class="timeline-item">
+                        <strong>2015</strong>
+                        <span>UCLA</span>
+                    </div>
+
+                    <div class="timeline-item">
+                        <strong>2017</strong>
+                        <span>B.S. Aerospace Engineering</span>
+                    </div>
+                </div>
+
+                <div class="timeline-column">
+                    <h3>Career</h3>
+
+                    <div class="timeline-item">
+                        <strong>2010–2014</strong>
+                        <span>Hillside</span>
+                    </div>
+
+                    <div class="timeline-item">
+                        <strong>2017</strong>
+                        <span>Guidance, Navigation & Control Engineer, SAIC</span>
+                    </div>
+
+                    <div class="timeline-item">
+                        <strong>2021</strong>
+                        <span>Verification & Validation Engineering, Lockheed Martin</span>
+                    </div>
+
+                    <div class="timeline-item">
+                        <strong>2024</strong>
+                        <span>Agile delivery leadership, 1LMX</span>
+                    </div>
+
+                    <div class="timeline-item">
+                        <strong>2025</strong>
+                        <span>Lead Software Engineer, Radar Signal Processor</span>
+                    </div>
+
+                    <div class="timeline-item">
+                        <strong>2026</strong>
+                        <span>Product Owner, Internal Digital Products</span>
+                    </div>
+                </div>
+
+                <div class="timeline-column">
+                    <h3>Side Projects / Growth</h3>
+
+                    <div class="timeline-item">
+                        <strong>2024</strong>
+                        <span>Scrum.org PSM I</span>
+                    </div>
+
+                    <div class="timeline-item">
+                        <strong>2024</strong>
+                        <span>Lockheed QMS</span>
+                    </div>
+
+                    <div class="timeline-item">
+                        <strong>2025</strong>
+                        <span>Scrum.org PSPO I</span>
+                    </div>
+
+                    <div class="timeline-item">
+                        <strong>2026</strong>
+                        <span>Personal website</span>
+                    </div>
+
+                    <div class="timeline-item">
+                        <strong>2026</strong>
+                        <span>Process Revolutions essay</span>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>
