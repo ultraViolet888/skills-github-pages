@@ -42,6 +42,19 @@
         .metric p {
             font-size: 0.9rem;
         }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 48px;
+            border-top: 1px solid black;
+            padding-top: 24px;
+        }
+
+        .section-block {
+            margin-top: 32px;
+        }
     </style>
 </head>
 
@@ -87,21 +100,17 @@
             </div>
         </section>
 
-        <section class="card-grid">
-            <div class="card">
-                <h2>What I’ve Done</h2>
-                <p>Short summary goes here.</p>
-            </div>
+        <section class="tabs">
+            <button>Professional</button>
+            <button>Personal</button>
+        </section>
 
-            <div class="card">
-                <h2>What I’m Working On</h2>
-                <p>Short summary goes here.</p>
-            </div>
+        <section class="section-block">
+            <h2>Professional</h2>
 
-            <div class="card">
-                <h2>What I’m Planning</h2>
-                <p>Short summary goes here.</p>
-            </div>
+            <p>
+                A timeline of education, engineering work, product ownership, and delivery leadership.
+            </p>
         </section>
     </main>
 </body>
