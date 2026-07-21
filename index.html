@@ -72,6 +72,17 @@
         .timeline-item span {
             display: block;
         }
+
+        .site-footer {
+            margin-top: 64px;
+            border-top: 1px solid black;
+            padding-top: 24px;
+            font-size: 0.9rem;
+        }
+
+        .site-version {
+            font-size: 0.8rem;
+        }
     </style>
 </head>
 
@@ -213,7 +224,34 @@
                 </div>
             </div>
         </section>
+
+        <footer class="site-footer">
+            <p>
+                This site is a living project. New features, projects, and learning milestones are added regularly.
+            </p>
+
+            <p class="site-version">
+                Last updated: <span id="last-updated">checking latest commit...</span>
+            </p>
+        </footer>
     </main>
+
+    <script>
+        fetch("https://api.github.com/repos/ultraviolet888/timothy-john/commits/my-pages")
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(data) {
+                const commitDate = new Date(data.commit.committer.date);
+
+                document.getElementById("last-updated").textContent =
+                    commitDate.toLocaleDateString();
+            })
+            .catch(function() {
+                document.getElementById("last-updated").textContent =
+                    "available on GitHub";
+            });
+    </script>
 </body>
  
 </html>
